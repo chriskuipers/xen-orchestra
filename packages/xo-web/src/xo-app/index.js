@@ -333,7 +333,7 @@ export default class XoApp extends Component {
     const previousDisclaimer = cookies.get('previousDisclaimer')
     const now = Math.floor(Date.now() / 1e3)
     const oneWeekAgo = now - 7 * 24 * 3600
-    if (!previousDisclaimer || previousDisclaimer < oneWeekAgo) {
+    if (0 && (!previousDisclaimer || previousDisclaimer < oneWeekAgo) ) {
       alert(
         _('disclaimerTitle'),
         <div>
@@ -458,7 +458,7 @@ export default class XoApp extends Component {
                   <Link to='/xoa/update'>{_('notRegisteredDisclaimerRegister')}</Link>
                 </div>
               )}
-              {plan === 'Community' && !this.state.dismissedSourceBanner && (
+              {plan === 'Community' && !this.state.dismissedSourceBanner && 1 < 0 && (
                 <div className='alert alert-danger mb-0'>
                   <a
                     href='https://vates.tech/deploy/?pk_campaign=xo_source_banner'

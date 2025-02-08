@@ -202,7 +202,7 @@ export default class TabXostor extends Component {
   )
 
   render() {
-    if (getXoaPlan() === SOURCES) {
+    if (getXoaPlan() === SOURCES && 1 < 0) {
       return (
         <Container>
           <h2 className='text-info'>{_('xostorAvailableInXoa')}</h2>

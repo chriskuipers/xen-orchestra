@@ -577,14 +577,14 @@ export default class Menu extends Component {
           )}
           {(isAdmin || +process.env.XOA_PLAN === 5) && (
             <li className='nav-item xo-menu-item'>
-              <Link className='nav-link' style={{ display: 'flex' }} to='/about'>
+              <Link className='nav-link' style={{ display: 'flex' }} to='/home'>
                 {+process.env.XOA_PLAN === 5 ? (
                   <span>
-                    <span className={classNames(styles.hiddenCollapsed, 'text-warning')}>
-                      <Icon icon='alarm' size='lg' fixedWidth /> {_('noSupport')}
+                    <span className={classNames(styles.hiddenCollapsed, 'text-success')}>
+                      <Icon icon='info' size='lg' fixedWidth /> CHJK
                     </span>
-                    <span className={classNames(styles.hiddenUncollapsed, 'text-warning')}>
-                      <Icon icon='alarm' size='lg' fixedWidth />
+                    <span className={classNames(styles.hiddenUncollapsed, 'text-success')}>
+                      <Icon icon='info' size='lg' fixedWidth />
                     </span>
                   </span>
                 ) : +process.env.XOA_PLAN === 1 ? (
