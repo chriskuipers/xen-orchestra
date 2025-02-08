@@ -374,7 +374,7 @@ export default class Xosan extends Component {
 
     return (
       <Page header={HEADER} title='xosan' formatTitle>
-        {process.env.XOA_PLAN < 5 ? (
+        {(process.env.XOA_PLAN < 5 && 1) ? (
           <Container>
             {error ? (
               <Row>

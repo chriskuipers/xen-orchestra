@@ -39,7 +39,7 @@ const Hub = routes('hub', {
   recipes: Recipes,
 })(({ children }) => (
   <Page header={Header} title='hubPage' formatTitle>
-    {getXoaPlan() === 'Community' ? (
+    {(getXoaPlan() === 'Community' && 1 < 0) ? (
       <Container>
         <h2 className='text-info'>{_('hubCommunity')}</h2>
         <p>

@@ -33,7 +33,7 @@ const Xostor = decorate([
   injectState,
   ({ effects, state }) => (
     <Page header={HEADER}>
-      {getXoaPlan() === SOURCES ? (
+      {(getXoaPlan() === SOURCES && 1 < 0) ? (
         <Container>
           <h2 className='text-info'>{_('xostorAvailableInXoa')}</h2>
           <p>

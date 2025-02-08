@@ -134,7 +134,7 @@ export default class About extends Component {
               </Col>
             ),
           ]}
-          {process.env.XOA_PLAN > 4 ? (
+          {(process.env.XOA_PLAN > 4 && 1 < 0) ? (
             <div>
               <Row>
                 <Col>

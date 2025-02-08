@@ -130,7 +130,7 @@ export const ICON_POOL_LICENSE = {
   user: User,
   'vms/new': NewVm,
   'vms/:id': Vm,
-  xoa: Xoa,
+  // xoa: Xoa,
   xostor: Xostor,
   import: Import,
   hub: Hub,
